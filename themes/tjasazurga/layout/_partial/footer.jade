@@ -1,4 +1,7 @@
 footer#footer
   div.outer
-    div#footer-info.inner
-      | &copy; #{date(new Date(), 'YYYY')} #[a(href='https://secure.istockphoto.com/profile/DrAfter123' target='_blank') Tjaša Žurga], #[a(href='https://github.com/nightmarebadger' target='_blank') Natan Žabkar]
+    div.container
+      div#footer-info.inner
+        img(src=url_for('css/images/footer-logo.png'))
+
+        p Copyright &copy; #{date(new Date(), 'YYYY')} by #[a(href='https://secure.istockphoto.com/profile/DrAfter123' target='_blank') Tjaša Žurga Žabkar], #[a(href='https://github.com/nightmarebadger' target='_blank') Natan Žabkar]
