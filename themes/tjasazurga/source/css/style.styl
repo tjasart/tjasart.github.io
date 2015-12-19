@@ -5,6 +5,9 @@ global-reset()
 img
   max-width 100%
 
+*
+  font-family 'Lato', sans-serif
+
 .clearfix
   clearfix()
 
@@ -15,6 +18,9 @@ img
   center(1080px, 15px)
 
 #header
+  .logo-container
+    padding-left 0
+
   .logo-wrap
     padding 40px 0 30px
 
@@ -26,36 +32,41 @@ img
 
     text-align center
 
+    &:hover
+      background black
+
     h1
       color color-white
       font-size 36px
 
   .main
     color color-black
-    font-size 16px
-    line-height 24px
+    font-size 22px
+    line-height 30px
+
+    .bigger
+      font-size 25px
+      line-height 36px
 
     .content-wrapper
-      padding 70px 0 100px 0
+      padding 100px 0
 
     .title
+      margin-top 0
 
 
     .middle-text
-      margin 50px 0 40px 0
+      margin 50px 0
 
       .last
-        margin-top 5px
+        margin-top 25px
 
 #footer
   background url(images/footer-background.jpg) 50% 50% no-repeat
   background-size cover
   padding 40px 0 180px 0
+  color color-white
 
-  .inner
-    col(5/7, 2/7)
-
-  &
   a
   a:hover
   a:active
@@ -68,3 +79,23 @@ img
 
   p
     margin-top 5px
+
+
+@media (max-width 767px)
+  #main
+    .main
+      font-size 16px
+      line-height 20px
+
+      .bigger
+        font-size 20px
+        line-height 25px
+
+      .content-wrapper
+        padding 75px 0
+
+      .middle-text
+        margin 35px 0
+
+        .last
+          margin-top 20px
